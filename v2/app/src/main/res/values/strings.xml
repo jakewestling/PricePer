@@ -23,6 +23,8 @@
     <string name="bd1">Best Deal!</string>
     <string name="bd2">Best Deal!</string>
     <string name="blank"></string>
+    <string name="sd">Same Deal!</string>
+
 
 
 </resources>

@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //Make green & display best deal text
                 try {
-                    if (pp1 <= pp2) {
+                    if (pp1 < pp2) {
                         (findViewById(R.id.item1house)).setBackgroundColor(Color.rgb(139,195,74));
                         (findViewById(R.id.item2house)).setBackgroundColor(Color.rgb(255,255,255));
                         ((TextView)findViewById(R.id.bd1)).setText(R.string.bd1);
@@ -96,6 +96,11 @@ public class MainActivity extends AppCompatActivity {
                         (findViewById(R.id.item1house)).setBackgroundColor(Color.rgb(255,255,255));
                         ((TextView)findViewById(R.id.bd2)).setText(R.string.bd2);
                         ((TextView)findViewById(R.id.bd1)).setText(R.string.blank);
+                    } else {
+                        (findViewById(R.id.item1house)).setBackgroundColor(Color.rgb(139,195,74));
+                        (findViewById(R.id.item2house)).setBackgroundColor(Color.rgb(139,195,74));
+                        ((TextView)findViewById(R.id.bd1)).setText(R.string.sd);
+                        ((TextView)findViewById(R.id.bd2)).setText(R.string.sd);
                     }
                 } catch(Exception e){
                     System.out.println("Error");
