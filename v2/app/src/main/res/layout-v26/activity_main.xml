@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/item1house"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pricetitle" />
+
+    <View
+        android:id="@+id/item2house"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item1house" />
+
+    <TextView
+        android:id="@+id/bd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/item1house"
+        app:layout_constraintTop_toBottomOf="@+id/item1" />
+
+    <TextView
+        android:id="@+id/bd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:autoSizeTextType="uniform"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/item2house"
+        app:layout_constraintTop_toBottomOf="@+id/item2" />
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:autoSizeTextType="uniform"
+        android:text="@string/item1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/price1view"
+        app:layout_constraintEnd_toEndOf="@+id/itemtitle"
+        app:layout_constraintStart_toStartOf="@+id/itemtitle" />
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:autoSizeTextType="uniform"
+        android:text="@string/item2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/price2view"
+        app:layout_constraintEnd_toEndOf="@+id/itemtitle"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/itemtitle" />
+
+    <EditText
+        android:id="@+id/price1view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="@string/price1"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/pricetitle"
+        app:layout_constraintStart_toStartOf="@+id/pricetitle"
+        app:layout_constraintTop_toTopOf="@+id/item1house" />
+
+    <EditText
+        android:id="@+id/price2view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/price2"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/pricetitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pricetitle"
+        app:layout_constraintTop_toTopOf="@+id/item2house" />
+
+    <EditText
+        android:id="@+id/quantity1view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/quantity1"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/quantitytitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quantitytitle"
+        app:layout_constraintTop_toTopOf="@+id/item1house" />
+
+    <EditText
+        android:id="@+id/quantity2view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:hint="@string/quantity2"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/quantitytitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quantitytitle"
+        app:layout_constraintTop_toTopOf="@+id/item2house" />
+
+    <TextView
+        android:id="@+id/priceper1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="@string/priceper1"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/quantity1view"
+        app:layout_constraintEnd_toEndOf="@+id/pricepertitle"
+        app:layout_constraintStart_toStartOf="@+id/pricepertitle" />
+
+    <TextView
+        android:id="@+id/priceper2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="@string/priceper2"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/quantity2view"
+        app:layout_constraintEnd_toEndOf="@+id/pricepertitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pricepertitle" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/app_name"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/subtitle"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/pricetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+
+        android:layout_marginTop="8dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/price_title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/quantitytitle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itemtitle"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+    <TextView
+        android:id="@+id/pricepertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/priceper_title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/quantitytitle"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+    <TextView
+        android:id="@+id/quantitytitle"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+
+        android:layout_marginTop="8dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/quantity_title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/pricepertitle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pricetitle"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+    <TextView
+        android:id="@+id/itemtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+
+        android:layout_marginTop="8dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/itemstitle"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/pricetitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+    <!--Item Rows-->
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:outlineProvider="none"
+        android:text="@string/clear"
+        app:layout_constraintEnd_toStartOf="@+id/comparebutton"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item2house" />
+
+    <Button
+        android:id="@+id/comparebutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#8BC34A"
+        android:text="@string/compare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintStart_toEndOf="@+id/clearbutton"
+        app:layout_constraintTop_toTopOf="@+id/clearbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">PricePer</string>
+    <string name="abc">abc</string>
+    <string name="subtitle">\"Compare grocery prices fast\"</string>
+    <string name ="price_title">Price ($):</string>
+    <string name="quantity_title">Quantity:</string>
+    <string name="priceper_title">PricePer:</string>
+    <string name="itemstitle">Item #</string>
+    <string name="item1"><u>Item 1:</u></string>
+    <string name="item2"><u>Item 2:</u></string>
+    <string name="item3"><u>Item 3:</u></string>
+    <string name="price1">1.00</string>
+    <string name="price2">1.00</string>
+    <string name="price3">1.00</string>
+    <string name="quantity1">1</string>
+    <string name="quantity2">1</string>
+    <string name="quantity3">1</string>
+    <string name="priceper1">1</string>
+    <string name="priceper2">1</string>
+    <string name="priceper3">1</string>
+    <string name="compare">Compare</string>
+    <string name="clear">C</string>
+    <string name="bd1">Best Deal!</string>
+    <string name="bd2">Best Deal!</string>
+    <string name="blank"></string>
+
+
+</resources>
