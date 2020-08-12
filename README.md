@@ -3,9 +3,15 @@
 #### [View this project and others on Alpha & Data](https://alphaanddata.com/)
 
 ## Description:
-Find the best deal with PricePer's easy to use side-by-side calculation.
-PricePer is used to compare grocery prices with different package quantities. 
+Worried about getting the best deal? Let PricePer help you out by comparing the best price per unit.
+
+With this easy to use Android application, shopping is a breeze. Simply input the prices and the quantities and press calculate.
 
 
-## What I Learned:
-* Android Studio basics
+## Key Technologies:
+
+### Java
+
+### XML
+
+### Android Studio
